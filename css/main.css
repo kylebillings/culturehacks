@@ -98,7 +98,7 @@ h3.circle-title:before {
 		content: "";
 		position: absolute;
 		z-index: -1;
-		background-color: rgba(35,35,35,.1);
+		background-color: #FCDB43;
 		width: 2.75rem;
 		height: 2.75rem;
 		border-radius: 50%;
