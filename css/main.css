@@ -173,7 +173,7 @@ h3.circle-title:before {
   transform: rotate(270deg);
   transform-origin: right top;
 }
-.vertical-text a {
+.vertical-text span {
   color: #fff;
   mix-blend-mode: difference;
 }
