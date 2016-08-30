@@ -38,6 +38,45 @@
   height: 100vh;
   min-height: 400px;
 }
+#hero {
+  height: 90vh;
+  width: 100vw;
+}
+/*grid*/
+.grid--xray .grid__img {
+	width: 300px;
+	height: 300px;
+}
+.grid__img img {
+	max-width: 100%;
+	display: block;
+}
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.tilt__back {
+	position: relative;
+}
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 h1.hero-gray {
   position: absolute;
   color: rgba(0, 0, 0, 0.04);
@@ -49,8 +88,8 @@ h1.hero-gray {
 }
 .hero-container h1.culture {
   margin-top: 100px;
-  font-size: 210px;
-  line-height:220px;
+  font-size: 12rem;
+  line-height:12rem;
   z-index:1;
   color: #444;
 }
@@ -58,7 +97,7 @@ h1.hero-gray {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: black;
-  background-image: url("../images/5.jpg");
+  background-image: url("../images/1.jpg");
   background-size: 150% 150%;
 }
 /*.hero-container h1.culture {
@@ -90,6 +129,11 @@ h1.hero-gray {
 }
 .sep {
   width: 200px;
+}
+.sep-image {
+  width: 100%;
+  height: 30vh;
+  min-height: 200px;
 }
 .title-font-weight {
   font-weight: 100;
@@ -128,6 +172,10 @@ h3.circle-title:before {
   -o-transform-origin: right top;
   transform: rotate(270deg);
   transform-origin: right top;
+}
+.vertical-text a {
+  color: #fff;
+  mix-blend-mode: difference;
 }
 .bg-test {
   background-color: red;
@@ -168,7 +216,35 @@ h4 {
   border: .5em solid white;
 }
 .image-1 {
-  background: url(../images/5.jpg) no-repeat center center;
+  background: url(../images/1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-2 {
+  background: url(../images/2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-3 {
+  background: url(../images/3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-4 {
+  background: url(../images/4.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-6 {
+  background: url(../images/6.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,7 +253,7 @@ h4 {
 .image-effect-1:before, .image-effect-1:after {
   position: absolute;
   content: '';
-  border: solid #7a7a7a;
+  border: solid #d8d8d8;
   z-index: -1;
 }
 .image-effect-1:before {
