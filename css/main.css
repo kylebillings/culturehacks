@@ -86,9 +86,16 @@ h1.hero-gray {
   line-height: 12rem;
   overflow: hidden;;
 }
+.hero-background {
+  position: absolute;
+  z-index:-5;
+  right: 0;
+  width: 75%;
+  /*mix-blend-mode: difference;*/
+}
 .hero-container h1.culture {
   margin-top: 100px;
-  font-size: 12rem;
+  font-size: 9rem;
   line-height:12rem;
   z-index:1;
   color: #444;
@@ -99,6 +106,7 @@ h1.hero-gray {
   background-color: black;
   background-image: url("../images/1.jpg");
   background-size: 150% 150%;
+  /*mix-blend-mode: difference;*/
 }
 /*.hero-container h1.culture {
   font-size: 210px;
@@ -279,4 +287,40 @@ h4 {
     -webkit-filter: grayscale(100%) contrast(190%) brightness(110%);
             filter: grayscale(100%) contrast(190%) brightness(110%);
     opacity: 0.65;
+}
+/*Button*/
+.button-fill {
+  position: relative;
+  border: 1px solid #7a7a7a;
+  //display:block;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+.button-fill:hover {
+  color: white;
+  border: 1px solid #A515FD;
+}
+
+.button-fill:before {
+  content: "";
+  position: absolute;
+  background: #A515FD;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 100%;
+  z-index: -1;
+  -webkit-transition: right 0.25s ease;
+}
+
+.button-fill:hover:before {
+  right: 0;
 }
