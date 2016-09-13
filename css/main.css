@@ -1,5 +1,5 @@
 .playfair {
-  font-family: 'Playfair', serif !important;
+  font-family: 'Playfair Display', serif !important;
   font-style: italic;
 }
 .gridlover-grid {
@@ -15,6 +15,83 @@
 /*Page Structure*/
 #main {
   width: 100%;
+}
+.navbar {
+  height: 20px;
+  position: fixed;
+  width: 100%;
+  z-index:300;
+}
+.navbar img {
+  mix-blend-mode: difference;
+}
+/*.vertical-bar {
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  z-index:-5;
+}*/
+.vl-1 {
+  top: 0;
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f5f5f5;
+  left: 20%;
+  z-index: -1000;
+}
+.vl-2 {
+  top: 0;
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f5f5f5;
+  left: 35%;
+  z-index: -1000;
+}
+.vl-3 {
+  top: 0;
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f5f5f5;
+  left: 50%;
+  z-index: -1000;
+}
+.vl-4 {
+  top: 0;
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f5f5f5;
+  left: 65%;
+  z-index: -1000;
+}
+.vl-5 {
+  top: 0;
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f5f5f5;
+  left: 80%;
+  z-index: -1000;
+}
+.vertical-center-line {
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f9f9f9;
+  left: 50%;
+}
+.vertical-right-line {
+  position: fixed;
+  width:1px;
+  height: 100%;
+  background-color: #f9f9f9;
+  left: 75%;
 }
 .text-center {
   text-align: center;
@@ -95,8 +172,8 @@ h1.hero-gray {
 }
 .hero-container h1.culture {
   margin-top: 100px;
-  font-size: 9rem;
-  line-height:12rem;
+  font-size: 5rem;
+  line-height: 6rem;
   z-index:1;
   color: #444;
 }
@@ -104,9 +181,29 @@ h1.hero-gray {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: black;
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/7.png");
   background-size: 150% 150%;
   /*mix-blend-mode: difference;*/
+}
+.hero-clip-2 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: white;
+  background-image: url("../images/9.png");
+  background-size: 150% 150%;
+  /*mix-blend-mode: difference;*/
+}
+.hero-background-image {
+  position: absolute;
+  width: 35%;
+  left:0;
+  top:0;
+}
+.hero-background-image-2 {
+  position: absolute;
+  width: 20%;
+  right:0;
+  top:0;
 }
 /*.hero-container h1.culture {
   font-size: 210px;
@@ -214,6 +311,17 @@ h4 {
 .black--bg {
   background-color: #4A4A4A;
 }
+/*Text Effects*/
+.page-template-template-home .landing h1 span:after {
+    background: #47eac8;
+    bottom: 0;
+    content: '';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
 
 /*Image Effects*/
 .image-effect-1 {
@@ -298,6 +406,7 @@ h4 {
   background: none;
   z-index: 1;
   cursor: pointer;
+  width: 260px;
   transition:         0.08s ease-in;
   -o-transition:      0.08s ease-in;
   -ms-transition:     0.08s ease-in;
@@ -323,4 +432,136 @@ h4 {
 
 .button-fill:hover:before {
   right: 0;
+}
+.floatingleft{
+    float: left;
+    -webkit-animation-name: Floatingxleft;
+    -webkit-animation-duration: 13s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatingleft;
+    -moz-animation-duration: 13s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+}
+
+@-webkit-keyframes Floatingxleft{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(-19px, 0px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floatingleft{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(-19px, 0px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+.floatingup{
+    float: left;
+    -webkit-animation-name: Floatingxup;
+    -webkit-animation-duration: 11s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floatingright;
+    -moz-animation-duration: 11s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+}
+
+@-webkit-keyframes Floatingxup{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0px, -11px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floatingup{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0px, -11px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+/*Preloader*/
+/***********************************************************
+*** CUSTOMIZE THE LOADING SCREEN BACKGROUND + ICON COLORS
+************************************************************/
+/* loading screen background color */
+#bonfire-pageloader {
+    background-color:#000;
+}
+/* loading icon color */
+#bonfire-pageloader svg {
+    fill:#fff;
+}
+
+
+/***********************************************************
+*** THE NITTY-GRITTY
+************************************************************/
+/* the pageloader */
+#bonfire-pageloader {
+    position:fixed;
+    z-index:99999999999999;
+
+    height:1000%;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin-top:-50px;
+}
+#bonfire-pageloader h1 {
+  color: white;
+}
+.bonfire-pageloader-fade {
+    opacity:0 !important;
+
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    -o-transition: all .75s ease;
+    -ms-transition: all .75s ease;
+    transition: all .75s ease;
+}
+.bonfire-pageloader-hide {
+    display:none;
+}
+
+/* the loading icon */
+.bonfire-pageloader-icon {
+    text-align: center;
+    width: 100%;
+    padding-top: 0%;
+    opacity:1;
+    position: fixed;
+}
+.bonfire-pageloader-icon-hide {
+    opacity:0 !important;
+
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+/* lets give the page body that subtle slide-in animation */
+html {
+    height:100%;
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    -o-transition: all .75s ease;
+    -ms-transition: all .75s ease;
+    transition: all .75s ease;
+}
+.bonfire-html-onload {
+
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    transition: all 0s ease;
 }

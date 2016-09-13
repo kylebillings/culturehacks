@@ -36,25 +36,30 @@
   <p><span><a href="#">Additional Information</a></span> | <span><a href="#">About Us</a></span> | <span><a href="#">Contact CultureHacks</a></span></p>
 </div> -->
 <!-- <img src="images/2.jpg" alt="" class="hero-background"> -->
+  <div class="vl-1"></div>
+  <div class="vl-2"></div>
+  <div class="vl-3"></div>
+  <div class="vl-4"></div>
+  <div class="vl-5"></div>
+  <img class="hero-background-image floatingleft" src="images/8.png" alt="Background Image" />
+  <img class="hero-background-image-2 floatingup" src="images/9.png" alt="Background Image" />
+<div class="navbar">
+  <div class="one column text-center">
+    <img src="images/CH_Logo-black.svg" alt="" class="img-responsive">
+  </div>
+</div>
 <section id="main">
-  <div class="container hero-container">
-    <h1 class="culture playfair hero-clip">Ça y Est.</h1>
+  <div class="container hero-container sr">
+    <!-- <h1 class="culture playfair hero-clip">making the world we want to live in.</h1> -->
 
     <!-- <h1 class="hacks title-font-weight">Hacks</h1> -->
     <!-- <div class="image-effect-2">
       <img src="images/5.jpg" alt="">
     </div> -->
-    <h5>Strengthening culture through 48 hour forums of art and technology.</h5>
-    <div class="spacing"></div>
-    <a href="#" class="button button-fill">Discover CultureHacks</a>
-  </div>
-  <div class="wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="image-effect-1 image-6 sr"></div>
-      </div>
+    <div style="max-width: 500px; margin: 0 auto; margin-top: 25%;">
+      <h5>Culture Hacks is organizing micro-festivals of radical <strong>creativity</strong> with x-collaborative <strong>teamwork</strong>, outsized <strong>inspiration</strong>, & cultural <strong>impact</strong></h5>
       <div class="spacing"></div>
-      <div class="spacing"></div>
+      <a href="#" style="float: right;" class="button button-fill sr scramble">Discover CultureHacks</a>
     </div>
   </div>
   <div class="wrapper">
@@ -64,9 +69,9 @@
           <div class="image-effect-1 image-3"></div>
         </div>
         <div class="five columns sr">
-          <h3 class="gray hero-clip">48 hour events inspired by the world's finest cultural foundations.</h3>
+          <h3 class="gray hero-clip underline-h3">48 hour events inspired by the world's finest cultural foundations.</h3>
           <p>CultureHacks 48 hour forums are powered by the lasting elements of thousands of years of creative expression.</p>
-          <a href="#" class="button button-fill">En Savoir Plus</a>
+          <a href="#" class="button button-fill scramble">En Savoir Plus</a>
           <!-- <div class="sep">
             <hr>
           </div>
@@ -96,7 +101,7 @@
         <div class="five columns sr">
           <h3 class="gray hero-clip ">48 hour events inspired by the world's finest cultural foundations.</h3>
           <p>CultureHacks 48 hour forums are powered by the lasting elements of thousands of years of creative expression.</p>
-          <a href="#" class="button button-fill">En Savoir Plus</a>
+          <a href="#" class="button button-fill scramble">En Savoir Plus</a>
           <!-- <div class="sep">
             <hr>
           </div>
@@ -287,7 +292,7 @@
     <div class="container">
       <div class="row">
         <div class="six columns offset-by-three text-center sr">
-          <h4>Ça Y Est</h4>
+          <h4 class='scramble'>Ça Y Est</h4>
           <p>Qu'est-ce que tu as pensé ?</p>
         </div>
       </div>
@@ -295,11 +300,26 @@
     <div class="spacing"></div>
   </div>
 </section>
-
+<!-- BEGIN THE LOADING SCREEN -->
+<div id="bonfire-pageloader">
+    
+    <!-- BEGIN THE ICON -->
+    <div class="bonfire-pageloader-icon">
+      <div class="six columns offset-by-three" style="">
+        <h1 class="playfair sr-2">making the world we want to live in.</h1>
+      </div>
+    </div>
+    <!-- END THE ICON -->
+</div>
+<!-- END THE LOADING SCREEN -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/scramble.js"></script>
+<script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 <script>
 window.sr = ScrollReveal();
-sr.reveal('.sr', { duration: 700 }, { easing: 'cubic-bezier(0.7, 0.1, 0.05, 1)'});
+sr.reveal('.sr', { duration: 1000 }, { easing: 'cubic-bezier(0.1, 0.3, 0.9, 1)'});
+sr.reveal('.sr-2', { duration: 800 }, { delay: 200 }, { easing: 'cubic-bezier(0.1, 0.3, 0.9, 1)'});
 </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
