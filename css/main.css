@@ -113,7 +113,7 @@
 }
 .hero-container {
   height: 100vh;
-  min-height: 400px;
+  min-height: 600px;
 }
 #hero {
   height: 90vh;
@@ -169,6 +169,15 @@ h1.hero-gray {
   right: 0;
   width: 75%;
   /*mix-blend-mode: difference;*/
+}
+.background-slash {
+  z-index:-20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  background: url(../images/background-slash.svg) no-repeat center center fixed;
 }
 .hero-container h1.culture {
   margin-top: 100px;
@@ -235,6 +244,9 @@ h1.hero-gray {
 .sep {
   width: 200px;
 }
+hr.bold{
+  border-top: 6px solid rgb(27,27,27) !important;
+}
 .sep-image {
   width: 100%;
   height: 30vh;
@@ -288,7 +300,23 @@ h3.circle-title:before {
 .img-responsive {
   max-width: 100%;
 }
+.full-block {
+  position: absolute;
+  height: 100%;
+  width:100%;
 
+}
+.block-image {
+  z-index:-2;
+  position: absolute;
+  height: 70vh;
+  width: 80%;
+  left:0;
+  top:0;
+}
+.white-card {
+  background-color: white;
+}
 /*Colors*/
 h4 {
   color: #6a6a6a;
@@ -309,7 +337,10 @@ h4 {
   background-color: #96D91D;
 }
 .black--bg {
-  background-color: #4A4A4A;
+  background-color: rgb(27,27,27);
+}
+.gray--bg {
+  background-color: #f5f5f5;
 }
 /*Text Effects*/
 .page-template-template-home .landing h1 span:after {
@@ -329,8 +360,48 @@ h4 {
   height: 50vh;
   min-height: 300px;
   position: relative;
-  border: .5em solid white;
 }
+.tall-image {
+  height: 70vh;
+  width: 40vw;
+  position: absolute;
+  top: -20vh;
+  right: 0vw;
+  overflow: hidden;
+}
+.hover-opacity {
+  -webkit-filter: grayscale(100%) contrast(190%) brightness(110%);
+    filter: grayscale(100%) contrast(190%) brightness(110%);
+  
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.hover-opacity:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.1, M12=0, M21=0, M22=1.1, SizingMethod='auto expand'); /* IE6 and 7 */ 
+
+}
+.image-box{
+  width:300px;
+  overflow:hidden;
+}
+.image {
+  width:300px;
+  height:200px;
+  background: url("http://lorempixel.com/300/200");
+  
+} 
+
 .image-1 {
   background: url(../images/1.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -369,7 +440,7 @@ h4 {
 .image-effect-1:before, .image-effect-1:after {
   position: absolute;
   content: '';
-  border: solid #d8d8d8;
+  border: solid #e1e1e1;
   z-index: -1;
 }
 .image-effect-1:before {
@@ -488,7 +559,7 @@ h4 {
 ************************************************************/
 /* loading screen background color */
 #bonfire-pageloader {
-    background-color:#000;
+    background-color:rgb(27,27,27);
 }
 /* loading icon color */
 #bonfire-pageloader svg {
@@ -503,13 +574,11 @@ h4 {
 #bonfire-pageloader {
     position:fixed;
     z-index:99999999999999;
-
-    height:1000%;
+    height:100%;
     left:0;
     right:0;
     top:0;
     bottom:0;
-    margin-top:-50px;
 }
 #bonfire-pageloader h1 {
   color: white;
@@ -531,11 +600,10 @@ h4 {
 .bonfire-pageloader-icon {
     text-align: center;
     width: 100%;
-    padding-top: 0%;
+    padding-top: 20%;
     opacity:1;
-    position: fixed;
 }
-.bonfire-pageloader-icon-hide {
+/*.bonfire-pageloader-icon-hide {
     opacity:0 !important;
 
     -webkit-transition: all .25s ease;
@@ -543,7 +611,7 @@ h4 {
     -o-transition: all .25s ease;
     -ms-transition: all .25s ease;
     transition: all .25s ease;
-}
+}*/
 
 /* lets give the page body that subtle slide-in animation */
 html {
