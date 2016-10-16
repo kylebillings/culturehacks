@@ -50,12 +50,12 @@ jQuery(window).load(function() {
         jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-fade');
 
         jQuery("html").removeClass('bonfire-html-onload');
-    },1750);
+    },2250);
 
     setTimeout(function(){
 
         jQuery("#bonfire-pageloader").addClass('bonfire-pageloader-hide');
 
-    },3500);
+    },3900);
 
 });
