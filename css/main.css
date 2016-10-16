@@ -419,6 +419,16 @@ h4 {
   height: 100%;
   width: 100%;
 }
+.tall-image-2 {
+  height: 70vh;
+  min-height: 550px;
+  width: 40vw;
+  position: absolute;
+  top: -20vh;
+  left: 0vw;
+  overflow: hidden;
+}
+
 .hover-opacity {
   -webkit-filter: grayscale(100%) contrast(190%) brightness(110%);
     filter: grayscale(100%) contrast(190%) brightness(110%);
@@ -484,6 +494,13 @@ h4 {
 }
 .image-6 {
   background: url(../images/6.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.image-7 {
+  background: url(../images/will.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -618,6 +635,12 @@ h4 {
     fill:#fff;
 }
 
+.background-headline {
+  position: absolute;
+  font-size: 15rem;
+  line-height: 15rem;
+  color: #fafafa;
+}
 
 /***********************************************************
 *** THE NITTY-GRITTY
