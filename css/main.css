@@ -585,8 +585,8 @@ h4 {
 /*Button*/
 .button-fill {
   position: relative;
-  border: 1px solid #e1c334;
-  color: #e1c334;
+  border: 1px solid rgb(27,27,27);
+  color: rgb(27,27,27);
   //display:block;
   outline: 0;
   overflow:hidden;
