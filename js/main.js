@@ -22,7 +22,7 @@ jQuery(document.body).on("touchmove", function(e) {
     e.preventDefault();
 });
 
-
+ 
 var scrollPosition = [
 self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
 self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
