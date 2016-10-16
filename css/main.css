@@ -342,8 +342,14 @@ h4 {
 .color1--bg {
   background-color: #e1c334;
 }
-.color1--bg-faded {
+.color-1-text {
+  color: #e1c334;
+}
+/*.color1--bg-faded {
   background-color: rgb(249, 242, 210);
+}*/
+.color1--bg-faded {
+  background-color: rgba(27, 27, 27, .05);
 }
 .color2--bg {
   background-color: #0000C8;
@@ -387,6 +393,7 @@ h4 {
 .gray--bg {
   background-color: #f5f5f5;
 }
+
 /*Text Effects*/
 .page-template-template-home .landing h1 span:after {
     background: #47eac8;
@@ -506,6 +513,13 @@ h4 {
   -o-background-size: cover;
   background-size: cover;
 }
+.image-8 {
+  background: url(../images/nec.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .image-effect-1:before, .image-effect-1:after {
   position: absolute;
   content: '';
@@ -539,7 +553,8 @@ h4 {
 /*Button*/
 .button-fill {
   position: relative;
-  border: 1px solid #7a7a7a;
+  border: 1px solid #e1c334;
+  color: #e1c334;
   //display:block;
   outline: 0;
   overflow:hidden;
