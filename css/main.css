@@ -25,6 +25,9 @@
 .navbar img {
   mix-blend-mode: difference;
 }
+.hero-background-image, .hero-background-image-2 {
+  z-index: -3000;
+}
 /*.vertical-bar {
   background-color: #f9f9f9;
   position: fixed;
