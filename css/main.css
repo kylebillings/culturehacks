@@ -778,6 +778,16 @@ button {
    }
 }
 
+.footer-link {
+  text-decoration: none;
+  border: 0 !important;
+  max-width: 90px;
+  margin: 0 auto;
+}
+.footer-link:hover {
+  text-decoration: none;
+  border: 0 !important;
+}
 //Component
 .md-modal {
   margin: auto;
