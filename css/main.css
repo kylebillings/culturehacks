@@ -93,6 +93,11 @@
   left: 80%;
   z-index: -1000;
 }
+@media (max-width: 800px) {
+  .vl-5 {
+    display: none;
+  }
+}
 .vertical-center-line {
   position: fixed;
   width:1px;
@@ -700,6 +705,18 @@ h4 {
 *** THE NITTY-GRITTY
 ************************************************************/
 /* the pageloader */
+#pre-loader {
+  position: fixed;
+  z-index:999999999;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(27,27,27);
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  color: #fff;
+}
 #bonfire-pageloader {
     position:fixed;
     z-index:99999999999999;
